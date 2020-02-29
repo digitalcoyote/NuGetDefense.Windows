@@ -2,21 +2,14 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageVersion>0.0.1</PackageVersion>
         <Title>NuGetDefense</Title>
         <Authors>Curtis Carter</Authors>
-        <Description>NuGetDefense ~ Check for Known Vulnerabilities at Build</Description>
-        <PackageDescription>NuGetDefense was inspired by [OWASP SafeNuGet](https://nuget.org/packages/SafeNuGet/) but aims to check with multiple sources for known vulnerabilities.</PackageDescription>
         <Copyright>Curtis Carter 2020</Copyright>
-        <PackageProjectUrl>https://github.com/DigitalCoyote/NuGetDefense</PackageProjectUrl>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageReleaseNotes>Initial Release: Support for checking for OSS Vulnerabilities listed on OSS Index</PackageReleaseNotes>
-        <PackageTags>Security</PackageTags>
-        <PackageId>NuGetDefense</PackageId>
-        <NuspecFile>NuGetDefense.nuspec</NuspecFile>
+        <NuspecFile>NuGetDefense.Windows.nuspec</NuspecFile>
         <LangVersion>8</LangVersion>
+        <TargetFramework>net48</TargetFramework>
     </PropertyGroup>
 
     <ItemGroup>
@@ -26,6 +19,9 @@
       <PackageReference Include="NuGet.Protocol" Version="5.4.0" />
       <PackageReference Include="NuGet.Resolver" Version="5.4.0" />
       <PackageReference Include="NuGet.Versioning" Version="5.4.0" />
+      <PackageReference Include="NuGetDefense.Core" Version="1.0.0" />
+      <PackageReference Include="NuGetDefense.NVD" Version="1.0.0" />
+      <PackageReference Include="NuGetDefense.OSSIndex" Version="1.0.0" />
       <PackageReference Include="System.Text.Json" Version="4.7.1" />
     </ItemGroup>
 
@@ -44,13 +40,6 @@
 
     <ItemGroup>
       <None Remove="NuGetDefense.nuspec" />
-      <Content Include="NuGetDefense.nuspec" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\NuGetDefense.Core\NuGetDefense.Core.csproj" />
-      <ProjectReference Include="..\NuGetDefense.NVD\NuGetDefense.NVD.csproj" />
-      <ProjectReference Include="..\NuGetDefense.OSSIndex\NuGetDefense.OSSIndex.csproj" />
     </ItemGroup>
 
     <PropertyGroup>

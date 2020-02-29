@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>NuGetDefense.Windows</id>
+    <title>NuGetDefense.Windows</title>
+    <version>1.0.0</version>
+    <authors>Curtis Carter</authors>
+    <owners>Curtis Carter</owners>
+    <projectUrl>https://github.com/DigitalCoyote/NuGetDefense.Windows</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>NuGetDefense ~ Windows environments without .Net Core</summary>
+    <description>NuGetDefense variant that runs using .Net 4.8 (preinstalled on Windows 10)</description>
+    <releaseNotes>https://github.com/digitalcoyote/NuGetDefense.Windows/releases</releaseNotes>
+    <repository type="git" url="https://github.com/digitalcoyote/NuGetDefense.Windows.git"/>
+    <license type="expression">MIT</license>
+    <tags>Security</tags>
+  </metadata>
+
+  <files>
+    <!-- <file src="Src/bin/Release/net461/NuGetDefense.exe" target="tools/net461/NuGetDefense.exe" /> -->
+    <file src="build/nugetdefense.targets" target="build/nugetdefense.targets" />
+    <file src="bin/Release/net48/NuGetDefense.exe" target="tools/net48/NuGetDefense.exe" />
+    <file src="bin/Release/net48/NuGetDefense.exe.config" target="tools/net48/NuGetDefense.exe.config" />
+    <file src="bin/Release/net48/Newtonsoft.Json.dll" target="tools/net48/Newtonsoft.Json.dll" />
+    <file src="bin/Release/net48/NuGet.Common.dll" target="tools/net48/NuGet.Common.dll" />
+    <file src="bin/Release/net48/NuGet.Configuration.dll" target="tools/net48/NuGet.Configuration.dll" />
+    <file src="bin/Release/net48/NuGet.Frameworks.dll" target="tools/net48/NuGet.Frameworks.dll" />
+    <file src="bin/Release/net48/NuGet.Packaging.dll" target="tools/net48/NuGet.Packaging.dll" />
+    <file src="bin/Release/net48/NuGet.Protocol.dll" target="tools/net48/NuGet.Protocol.dll" />
+    <file src="bin/Release/net48/NuGet.Resolver.dll" target="tools/net48/NuGet.Resolver.dll" />
+    <file src="bin/Release/net48/MessagePack.dll" target="tools/net48/MessagePack.dll" />
+    <file src="bin/Release/net48/MessagePack.Annotations.dll" target="tools/net48/MessagePack.Annotations.dll" />
+    <file src="bin/Release/net48/Microsoft.Bcl.AsyncInterfaces.dll" target="tools/net48/Microsoft.Bcl.AsyncInterfaces.dll" />
+    <file src="bin/Release/net48/NuGet.Versioning.dll" target="tools/net48/NuGet.Versioning.dll" />
+    <file src="bin/Release/net48/NuGetDefense.Core.dll" target="tools/net48/NuGetDefense.Core.dll" />
+    <file src="bin/Release/net48/NuGetDefense.NVD.dll" target="tools/net48/NuGetDefense.NVD.dll" />
+    <file src="bin/Release/net48/NuGetDefense.OSSIndex.dll" target="tools/net48/NuGetDefense.OSSIndex.dll" />
+    <file src="bin/Release/net48/System.Text.Json.dll" target="tools/net48/System.Text.Json.dll" />
+    <file src="bin/Release/net48/System.Buffers.dll" target="tools/net48/System.Buffers.dll" />
+    <file src="bin/Release/net48/System.Memory.dll" target="tools/net48/System.Memory.dll" />
+    <file src="bin/Release/net48/System.Numerics.Vectors.dll" target="tools/net48/System.Numerics.Vectors.dll" />
+    <file src="bin/Release/net48/System.Runtime.CompilerServices.Unsafe.dll" target="tools/net48/System.Runtime.CompilerServices.Unsafe.dll" />
+    <file src="bin/Release/net48/System.Text.Encodings.Web.dll" target="tools/net48/System.Text.Encodings.Web.dll" />
+    <file src="bin/Release/net48/System.Threading.Tasks.Extensions.dll" target="tools/net48/System.Threading.Tasks.Extensions.dll" />
+    <file src="bin/Release/net48/System.ValueTuple.dll" target="tools/net48/System.ValueTuple.dll" />
+    <file src="bin/Release/net48/VulnerabilityData.bin" target="tools/net48/VulnerabilityData.bin" />
+    <file src="lib/net461/_._" target="lib/net461/_._" />
+    <file src="lib/netstandard1.0/_._" target="lib/netstandard1.0/_._" />
+  </files>
+</package>
